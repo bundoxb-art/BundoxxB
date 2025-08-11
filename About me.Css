@@ -1,0 +1,83 @@
+.background-clip{
+    position: absolute;
+    right: 0;
+    left:0;
+    bottom: 0;
+    margin:0;
+    z-index: -500;
+    padding: 0;
+    width:100%;
+    overflow:auto;
+
+}
+.background-clip::after{
+    content: "Joshua";
+    top: -5;
+    left: -10;
+    color: white;
+}
+ h1{
+    color:red;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h2{
+    color:yellow;
+}
+
+body{
+    color: white;
+    background-color: #7cf03d;
+}
+
+.btn-sci {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    padding :10px 30px;
+    background: #7cf03d;
+    border: 2px solid red;
+    border-radius: 40px;
+    box-shadow: 0 0 10px blue;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition:0.5s;
+
+}
+.btn:hover {
+    background: transparent;
+    color: blue;
+    box-shadow: none;
+
+}
+.Home-info .btn-sci .sci{
+    margin-left: 20px;
+}
+
+.btn-sci .sci a {
+    display:inline-flex;
+    padding :8px;
+    border:2px solid aqua;
+    border-radius:50%;
+    font-size: 20px;
+    color:#7cf03d;
+    margin:0 8px;
+    transition: 0.5s;
+}
+.btn-sci .sci a:hover{
+    background: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px;
+
+}
+
+
+
+
+    

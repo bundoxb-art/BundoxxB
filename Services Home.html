@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="Servisers Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <h1>The Bundoxx The Bee...</h1>
+    <div class="navbar">
+<a href="Services Home.html">Services</a>
+<a href="">web dev</a> 
+<a href="">Logo Design</a>
+<a href="">UI / UX Dev</a>
+<a href="Photograph.html">Photograph/Video</a>
+    </div>
+    <div class="slideshow-container">
+        <img src="My Images/image 4.jpg" class="slides active">
+        <img src="My Images/Image 7.jpg" class="slides">
+        <img src="My Images/Image 2.jpg" class="slides">
+        <img src="My Images/Image 1.jpg" class="slides">
+    </div>
+    <div class="btn-sci">
+            
+        <div class="sci">
+            
+            <a href="https://www.instagram.com/BundoxxB" target="_blank">
+                <i class="fab fa-instagram"></i> <img src="My Images/image 5.jpg" alt="Instagram" width="20px">
+              </a>
+              <a href="https://www.facebook.com/BundoxxB" target="_blank"><img src="My Images/image 12.jpg" alt="facebook" width="20px"></a>
+              <a href="https://wa.me/0768771559" target="_blank">
+                <i class="fab fa-whatsapp"></i> <img src="My Images/image 9.jpg" alt="whatsapp" width="20px">
+              </a>
+            <a href="https://twitter.com/BundoxxB" target="_blank"><img src="My Images/image 8.jpg" alt="twitter" width="20px"></a>
+            <a href="https://www.tiktok.com/@BundoxxB" target="_blank"><img src="My Images/image 10.jpg" alt="twitter" width="20px"></a>
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+    <script>
+        let index = 0;
+        const slides = document.querySelectorAll('.slides');
+    
+        function showSlides() {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'block' : 'none';
+            });
+            index = (index + 1) % slides.length;
+        }
+    
+        setInterval(showSlides, 4000);
+    </script>
+    
+
+</body>
+</html>

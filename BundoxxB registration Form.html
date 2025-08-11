@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rell="stylesheet" href="Registration.css">
+</head>
+<style>
+    *{
+    padding:0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+body {
+   
+    background-size: cover;
+    color:#7cf03d;
+    background-color: #1f242d;
+    
+}
+.Registration-form {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50, -50);
+    width: 350px;
+    
+}
+.Registration-form h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+    font-style: italic , underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Registration-form p{
+    font-size: 20px;
+    margin: 15px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+
+
+
+}
+.Registration-form input{
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    outline:none;
+    color: black;
+    
+
+}
+.Registration-form button
+{
+font-size: 18px;
+font-weight:bold;
+margin: 20px 0;
+padding: 10px 15px;
+width: 50%;
+border: 0;
+border-radius: 5px;
+background-color: #a50a0a;
+
+
+}
+.Registration-form button:hover{
+    
+    background: green;
+    color: #7cf03d;
+    box-shadow:#7cf03d green;
+}
+.background-clip{
+    position:absolute;
+    right: 0px;
+    left:0;
+    
+    bottom: 0;
+    margin: 0;
+    top:0;
+    
+
+    z-index: -1;
+    padding:0;
+
+}
+.background-clip{
+    color: black;
+    
+    
+}
+.Date and Time legend{
+
+}
+
+
+</style>
+<body>
+    <div class="Registration-form">
+        <h1>BundoxxB Form</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Login Information</legend>
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="My Videos/Video 5.mp4">
+            </video>
+            
+            <p>Full Name:</p>
+            <input type="text" name="Fullname" placeholder="Fullname">
+            <p>User Name:</p>
+            <input type="text" Name="Username" placeholder="Username">
+            <p>Registration Number:</p>
+            <input type="text" name="Reg No" placeholder="Reg No">
+            <p>Email:</p>
+            <label for="Password" >Enter email</label>
+                    <input type="email" name="password" required autocomplete="off">
+            <p>Password</p>
+            
+            <label for="Password" >Enter Password</label>
+                    <input type="password" name="password" required autocomplete="off">
+            <p>Course:</p>
+            <select name="Course" id="Course">
+                <option value="DICT">Information communication Technology</option>
+                <option value="DICT">Computer Science</option>
+                <option value="DICT">Information Technology</option>
+                <option value="DICT">Mathematics and Computer Science</option>
+            </select>
+            <p>Gender</p>
+            <input type="checkbox"> Male
+            <input type="checkbox"> Female
+            <Input type="checkbox"> Others
+                <p>File Upload:</p>
+                <input type="file"> 
+                <p> Languages</p>
+                <input type="checkbox"> English 
+                <input type="checkbox"> Kiswahili
+                <input type="checkbox"> French
+                <input type="checkbox"> Germeny
+                <input type="checkbox"> Others
+
+                <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+
+                <button type="submit"> Registration</button>
+               
+                
+                    
+
+
+
+
+
+
+
+        </form>
+    </div>
+    
+</body>
+</html>

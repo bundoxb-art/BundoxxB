@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video/photograph</title>
+ <style>
+    /* General Styles */
+body {
+    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    margin-inline: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(images/wallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color:green;
+    padding:10px 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.5s;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar ul li a:hover {
+    background-color: greenyellow;
+    border-radius: 20px;
+    display: inline-block;
+    padding :10px 30px;
+    background: brown;
+    border: 2px solid blue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px yellow;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: 1.5s;
+}
+
+/* Image Slider */
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow:hidden;
+    margin-bottom: 50px;
+}
+.slider-container {
+    width: 100%;
+    height: 400px;  /* Adjust the height of the slider */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition :1.5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slider-container {
+    animation: slide 5s infinite;
+    transition:1.5s;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+}
+
+/* Service Cards */
+.service {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    background-color:aqua;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(244, 244, 46, 0.3);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* video */
+.team-videos {
+    display:inline-block;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-videos video{
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+}
+marquee{
+    background-color:brown;
+    color: aqua;
+    border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service {
+        width: 80%;
+    }
+    .team-videos video {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li {
+        display:block;
+        margin: 10px 0;
+    }
+}
+*{
+    color: pink;
+    margin: 0;
+    padding:10px;
+}
+
+ #about img{
+    height: 600px;
+    width:600px;
+    opacity:1;
+    padding: 10px;
+ }
+ hr{
+    border-color: blueviolet;
+    shape-margin: 0%;
+    border-radius: 40px;
+ }
+ .logo{
+    position:fixed;
+    height:30px;
+    left: 0px;
+    width: 30px;
+    margin-right: auto;
+ }
+      .container{
+       list-style: none;
+       display: flex;
+
+
+        }
+      .pages{
+       padding-right: 30px;
+       padding-top: 5px;
+
+
+        }
+        
+
+        
+
+
+
+ </style>
+</head>
+<body >
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+       
+        <ul class="container">
+            <li class="pages"><a href="#home">Welcome</a></li>
+            <li class="pages"><a href="#about">About</a></li>
+            <li class="pages"><a href="#services">The Bee</a></li>
+            <li class="pages"><a href="#videos">Videos</a></li>
+           
+        </ul>
+    </nav>
+
+    <!-- Image Slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <img src="My Images/image 25.jpg" alt="Slide 1">
+            <img src="My Images/bundo (3).jpg" alt="Slide 2" >
+            
+           
+            
+        </div>
+    </div>
+
+    <!-- Sections -->
+    <section id="home">
+        <h2 style="color:greenyellow; font-family: 'Times New Roman', Times, serif;"><U>The Bundoxx ,The Bee </U></h2>
+        <p><b>Welcome to my video/photograph page </b></p> <br><hr>
+        <p><marquee>Incubation TUM Developers Club</marquee> <hr>
+       
+    </section>
+
+    <section id="about">
+        <h2 style="color:greenyellow; font-family: 'Times New Roman', Times, serif;"> <u>The Videos and photos was shot and Edited by BundoxxBriaN
+            
+        </u></h2>
+        <p>
+        <img src="My Images/image 13.jpg" alt="About Us Image">
+       <p> This photo was shot By BundoxxB For more information click the button below.</p>
+       <a href="About Me.Html">About me</a></li>
+    </section><hr>
+
+    <section id="services">
+        <h2 style="color:greenyellow; font-family: 'Times New Roman', Times, serif;">What i can offer </h2>
+        <div class="service">
+            <h3 style="color:blueviolet">Service 1</h3>
+            <p style="color:whitesmoke"><i>Services
+
+                I offer professional and beginner-friendly web development and physics tutoring services. Whether you're a student looking for clear explanations or a small business wanting a modern website, I’m here to help you succeed. I focus on clear communication, personalized support, and delivering results that match your goals.</i></p>
+        </div>
+        <div class="service">
+            <h3 style="color:blueviolet"><b><u>Service 2</u></b></h3>
+            <p style="color:whitesmoke"><i>I’m a self-taught web developer and physics tutor, with a strong focus on building real-world skills. While I’m still gaining experience, I’ve completed several small projects and enjoy turning ideas into working solutions. I’m committed to learning every day and helping others through my growing knowledge.</i></p>
+        </div>
+        <div class="service">
+            <h3 style="color:blueviolet"><b><u>Service 3</u></b></h3>
+            <p style="color: aliceblue;"><i>I have a solid understanding of physics and enjoy helping others learn. I’ve supported classmates and friends in understanding complex topics by explaining them in simple ways. I may not be a certified tutor yet, but I’m dedicated, patient, and always willing to put in the effort to help students succeed</i></p>
+            <p style="color:whitesmoke">REMEMBER AM A GOD FEARING .</p>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2 style="color:greenyellow; font-family: 'Times New Roman', Times, serif;">Videos and Audios</h2>
+        <div class="team-videos">
+           <video controls>
+            <source src="My Videos/Video 6.mp4" type="video/mp4">
+           </video>
+           <video controls>
+            <source src="My Videos/Video 7.mp4" type="video/mp4">
+           </video>
+           <video controls>
+            <source src="videos/VID 3 (3).mp4" type="video/mp4">
+           </video>
+           <video controls>
+            <source src="My Videos/VideoAi_1744721956528.mp4"type="video/mp4">
+           </video>
+           <video controls>
+            <source src="videos/VID 5 (5).mp4"type="video/mp4">
+           </video>
+
+           
+        </div>
+      
+    </div>
+    </section>
+
+
+    <!--footer starts-->
+    <marquee><p style="color:blue; font-family: 'Times New Roman', Times, serif;">Created by <span><i>BundoxxBriaN</i></span>|All rights reserved</p></marquee>
+    <!--footer ends-->
+
+    
+</body>
+</html>
